@@ -1,0 +1,427 @@
+@charset “UTF-8”;
+@import url(https://fonts.google.com/noto/specimen/Noto+Sans+JP);
+
+body {
+    margin:0;
+    font-family:"noto sans JP",helvetica, arial,sans-serif;
+    background-color: #FFFCF0;
+    color: #4f4f4f ;
+    font-size:16px;
+}
+
+/* ====================
+        ヘッダー
+==================== */
+
+header{
+    background-color: #FAB12F;
+    margin: 0 auto;
+    width:100%;
+}
+
+.header_inner{
+    margin: 0 auto;
+    width:85%;
+    height: 70px;
+    align-content:center;
+ }
+
+.header_logo{
+    width: 240px;
+    float: left;
+    margin:0 auto;
+}
+
+.logout{
+    float: right;
+    font-size: 12px;
+}
+
+/* ====================
+        コンテンツ
+==================== */
+
+#container{
+    margin: 0 auto;
+}
+
+
+/* ====================
+    ファーストビュー
+==================== */
+
+
+.top_pc,
+.top_sp{
+    display:flex;
+    margin : 11.32vw 8vw;
+    justify-content: space-between;
+}
+
+
+.lesson1_top_pc,.lesson1_top_sp{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding-bottom:130px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.top_pc a{
+    width:45%;
+}
+
+.top_image{
+    width:100%;
+}
+
+.top-right{
+    width:45%;
+}
+
+.logo_orange{
+    width: 53vw;
+    width:100%;
+}
+
+.tagline{
+    font-size: 1.56vw;
+    margin:20px 0 0 0;
+    line-height: 2;
+}
+
+.title_text{
+    font-size: 2.1875vw;
+    padding:20px 0 0 0;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.top_sp{
+    display:none;
+}
+
+.lesson1_top_sp{
+    display:none;
+    }
+
+@media screen and (max-width:768px){
+
+    .top_pc,.lesson1_top_pc{
+        display:none;
+        }
+
+    .top_sp{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .top_sp a{
+        margin: 0 auto;
+        width:62.5vw;
+    }
+
+    .top-right{
+        margin: 90px auto 0;
+        width:62.5vw;
+    }
+
+    .tagline{
+        font-size: 2.34375vw;
+
+    }
+
+    .title_text{
+        font-size:3.64583vw;
+        font-weight: 700;
+    }
+
+    .lesson1_top_sp{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .lesson1_image{
+       margin:0 auto;
+       padding-top:60px;
+    }
+
+}
+
+
+
+
+/* ============================
+    レッスン本編 ファーストビュー
+============================ */
+
+
+
+.top_left{
+    display:flex;
+    flex-flow: column;
+    margin-top: 100px ;
+}
+
+.step_title{
+    font-weight: 500;
+}
+
+.top_lesson_title{
+    padding-top: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    width: fit-content;
+    text-decoration-color: #FAB12F;
+    text-decoration-line: underline;
+    text-decoration-thickness: 10px;
+    text-underline-offset: -4px;
+}
+
+.lesson_overview{
+    padding-top:40px;
+}
+
+.lesson_overview p{
+    line-height:2;
+}
+
+.lesson1_image img{
+    width: 290px;
+}
+
+.step_title{
+    font-size: 14px;
+}
+
+.sen{
+    border-bottom: 1.5px solid #979797;
+    width: 75vw;
+    margin: 0 auto;
+}
+
+
+/* ====================
+        リード文
+==================== */
+
+
+.intro{
+    background-color: #FFF3C1 ;
+    width: 100%;
+}
+
+.intro_inner{
+    width:fit-content;
+    margin : auto;
+    padding: 70px 0;
+    line-height: 2;
+}
+
+/* ====================
+        レッスン一覧
+==================== */
+
+.lesson_list{
+    width: 60.9vw;
+    margin : 70px auto;
+}
+
+h2{
+    text-align: center;
+    font-size: :large;
+    padding-bottom:90px;
+}
+
+.step{
+    padding:30px 0;
+    border-top: 1px solid #979797;
+}
+
+.step:last-child{
+    padding:30px 0;
+    border-bottom: 1px solid #979797;
+}
+
+
+.lesson_title{
+    display: flex;
+    padding:0 0 0 20px;
+}
+
+.lesson_title h3{
+    width:120px;
+}
+
+.lesson_title p{
+    padding:0 0 0 30px;
+}
+
+
+summary {
+	list-style-type: none;
+    position: relative;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+    
+}
+summary:before {
+	content: "＋";
+    top: 50;
+    position: absolute;
+    right: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+details[open] summary:before,
+summary details[open] summary:before {
+	content: "−";
+}
+
+ul{
+    padding-left: 200px
+}
+
+.lesson_list_inner li{
+    padding:2px;
+    width: fit-content;
+}
+
+/* ====================
+       レッスン本編
+==================== */
+
+.lesson_container h4{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin:130px 0 80px 0;
+    text-decoration-color: #FFF3C1;
+    text-decoration-line: underline;
+    text-decoration-thickness: 10px;
+    text-underline-offset: -4px;
+}
+
+.lesson_container{
+    justify-content: center;
+    margin:0 auto;
+}
+.main-text{
+    width:65vw;
+    margin:0 auto;
+    padding-bottom:70px;
+}
+
+.lesson_container p{
+    line-height: 2;
+}
+
+.lesson_container a{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.lesson_container a img{
+    max-width: 50vw;
+}
+
+.conclusion{
+    background-color: #FFF3C1;
+}
+
+.conclusion_title{
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.conclusion_inner{
+    padding:120px 0;
+    width: 70vw;
+    margin: -1.5em auto;
+}
+
+.conclusion_text{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    /* text-indent: -1.5em; */
+}
+
+.conclusion_text p{
+    padding: 16px;
+}
+
+/* ====================
+    ページナビゲーション
+==================== */
+
+.pagenavi{
+    height: 300px;
+}
+
+.navi_inner{
+    padding: 10vw 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+.top_jump{ 
+    border: 2px solid #979797;
+    border-radius: 40px;
+    padding:1vw 10vw;
+    text-decoration: none;
+    color: #4f4f4f;
+    background-color: #FFFCF0;
+}
+
+.top_jump:hover {
+    background-color: #FAB12F;
+}
+
+.prev_button{
+    padding-right: 18vw;
+    display:flex;
+    align-items:center;
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+.prev_button img{
+    padding-right: 10px;
+}
+
+.next_button{
+    padding-left: 18vw;
+    display:flex;
+    align-items:center;
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+.next_button img{
+    padding-left: 10px;
+}
+
+
+/* ====================
+        フッター
+==================== */
+
+footer{
+    background-color: #FAB12F;
+}
+
+.footer_inner{
+    padding:35px 0 ;
+    color:#ffffff;
+    text-align: center;
+    font-size: 12px;
+}
+
