@@ -27,12 +27,14 @@ header{
  }
 
 .header_logo{
+    padding:14px 0;
     width: 240px;
     float: left;
     margin:0 auto;
 }
 
 .logout{
+    padding:25px 0;
     float: right;
     font-size: 12px;
 }
@@ -98,64 +100,20 @@ header{
     font-weight: 600;
 }
 
-.top_sp{
+
+
+/* ==================================
+    PC表示の時にスマホ版を表示させない
+==================================== */
+
+.top_sp, .lesson1_top_sp, .intro_sp, .sp{
     display:none;
 }
-
-.lesson1_top_sp{
-    display:none;
-    }
-
-@media screen and (max-width:768px){
-
-    .top_pc,.lesson1_top_pc{
-        display:none;
-        }
-
-    .top_sp{
-        display:flex;
-        flex-direction: column;
-    }
-
-    .top_sp a{
-        margin: 0 auto;
-        width:62.5vw;
-    }
-
-    .top-right{
-        margin: 90px auto 0;
-        width:62.5vw;
-    }
-
-    .tagline{
-        font-size: 2.34375vw;
-
-    }
-
-    .title_text{
-        font-size:3.64583vw;
-        font-weight: 700;
-    }
-
-    .lesson1_top_sp{
-        display:flex;
-        flex-direction: column;
-    }
-
-    .lesson1_image{
-       margin:0 auto;
-       padding-top:60px;
-    }
-
-}
-
-
 
 
 /* ============================
     レッスン本編 ファーストビュー
 ============================ */
-
 
 
 .top_left{
@@ -207,12 +165,12 @@ header{
 ==================== */
 
 
-.intro{
+.intro_pc,.intro_sp{
     background-color: #FFF3C1 ;
     width: 100%;
 }
 
-.intro_inner{
+.intro_inner_pc, .intro_inner_sp{
     width:fit-content;
     margin : auto;
     padding: 70px 0;
@@ -247,16 +205,16 @@ h2{
 
 .lesson_title{
     display: flex;
-    padding:0 0 0 20px;
+    padding:0 0 0 1.5vw;
 }
 
 .lesson_title h3{
-    width:120px;
+    width:13.3vw;
 }
 
-.lesson_title p{
+/* .lesson_title p{
     padding:0 0 0 30px;
-}
+} */
 
 
 summary {
@@ -425,3 +383,64 @@ footer{
     font-size: 12px;
 }
 
+
+@media screen and (max-width:768px){
+
+    .top_pc,.lesson1_top_pc, .intro_pc, .pc{
+        display:none;
+        }
+
+    .top_sp{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .top_sp a{
+        margin: 0 auto;
+        width:62.5vw;
+    }
+
+    .top-right{
+        margin: 90px auto 0;
+        width:62.5vw;
+    }
+
+    .tagline{
+        font-size: 2.34375vw;
+    }
+
+    .title_text{
+        font-size:3.64583vw;
+        font-weight: 700;
+    }
+
+    .lesson1_top_sp{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .lesson1_image{
+       margin:0 auto;
+       padding-top:60px;
+    }
+
+    .intro_sp{
+        display:flex;
+    }
+
+    .intro_inner_sp{
+        flex-direction: column;
+        padding: 30px 30px;
+        font-size: 3vw;
+    }
+
+    .sp{
+        display: block;
+        width: 78.6vw;
+    }
+
+    .sp h3{
+        width: 90px;
+    }
+	
+}
