@@ -106,7 +106,7 @@ header{
     PC表示の時にスマホ版を表示させない
 ==================================== */
 
-.top_sp, .lesson1_top_sp, .intro_sp, .sp{
+.top_sp, .lesson1_top_sp, .intro_sp, .sp, .lesson_container_sp{
     display:none;
 }
 
@@ -139,6 +139,7 @@ header{
 
 .lesson_overview{
     padding-top:40px;
+    font-size: 14px;
 }
 
 .lesson_overview p{
@@ -241,7 +242,7 @@ summary details[open] summary:before {
 }
 
 ul{
-    padding-left: 200px
+    padding-left: 15.6vw;
 }
 
 .lesson_list_inner li{
@@ -253,7 +254,7 @@ ul{
        レッスン本編
 ==================== */
 
-.lesson_container h4{
+.lesson_container_pc h4{
     font-size: 28px;
     font-weight: 600;
     text-align: center;
@@ -264,7 +265,7 @@ ul{
     text-underline-offset: -4px;
 }
 
-.lesson_container{
+.lesson_container_pc{
     justify-content: center;
     margin:0 auto;
 }
@@ -274,17 +275,17 @@ ul{
     padding-bottom:70px;
 }
 
-.lesson_container p{
+.lesson_container_pc p{
     line-height: 2;
 }
 
-.lesson_container a{
+.lesson_container_pc a{
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
 }
 
-.lesson_container a img{
+.lesson_container_pc a img{
     max-width: 50vw;
 }
 
@@ -386,7 +387,7 @@ footer{
 
 @media screen and (max-width:768px){
 
-    .top_pc,.lesson1_top_pc, .intro_pc, .pc{
+    .top_pc,.lesson1_top_pc, .intro_pc, .pc, .lesson_container_pc{
         display:none;
         }
 
@@ -442,5 +443,49 @@ footer{
     .sp h3{
         width: 90px;
     }
-	
+
+    .lesson_container_sp{
+        display:block;
+        justify-content: center;
+        margin:0 auto;
+    }
+
+    .lesson_container_sp h4{
+        font-size: 5vw;
+        font-weight: 600;
+        text-align: center;
+        margin:130px 0 80px 0;
+        text-decoration-color: #FFF3C1;
+        text-decoration-line: underline;
+        text-decoration-thickness: 10px;
+        text-underline-offset: -4px;
+    }
+
+    .main-text{
+        height:100%;
+        width:80vw;
+        margin:0 auto;
+        /* margin-bottom:10.6vw; */
+        padding-bottom:10.6vw;
+    }
+    
+    .lesson_container_sp p{
+        line-height: 2;
+        font-size: 3.125vw;
+    }
+    
+    .lesson_container_sp a{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    
+    .lesson_container_sp a img{
+        max-width: 70vw;
+    }
+
+    .lesson1_top_sp p{
+        font-size: 3.125vw;
+    }
+
 }
